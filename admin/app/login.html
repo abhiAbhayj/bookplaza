@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>login form</title>
+<link rel="stylesheet" href="login.css">
+</head>
+<body>    
+<!--<div class="sup"></div>
+<div class="wrapper">-->
+<form action="">
+<!--<h2 style="padding: 15px;color: rgb(4, 19, 19);margin: 80px 400px -30px 22px;">BookPlaza</h2>-->
+<!--<img style="margin: -10px -10px 150px 350px;" src="logo-bookplazacircle.png">-->
+<h2 style="margin: -100px 700px 50px 660px;">Login</h2>
+<div class="input-box">
+<span class="icon">
+<ion-icon name="mail"></ion-icon>
+</span>
+<input type="email" placeholder="Enter your email id" required>
+<label>E-MAIL</label>
+</div>
+<div class="input-box">
+<span class="icon">
+<ion-icon name="lock-closed"></ion-icon>
+</span>
+<input type="password" id="pass" placeholder="Enter your password" required>
+<label>PASSWORD</label>
+<span class="eye" onclick="myfunction()">
+<ion-icon name="eye" id="hide1"></ion-icon>
+</span>
+<span class="eye-off" onclick="myfunction()">
+<ion-icon name="eye-off" id="hide2"></ion-icon>
+</span>
+</div>
+<div class="remember-forgot">
+<label><input style="margin: 20px 0 10px 450px;" type="checkbox">Remember Me</label>
+<!--<a href="#">Forgot Password?</a>-->
+</div>
+<button type="submit" style="margin: -100px 10px -100px 500px;">Login</button>
+<div class="register-link">
+<p style="color: black;font-weight: 10px;margin: 0 0 0 310px;">Don't have an account?<a
+href="#" style="color: black;font-weight: bold;"> Sign-In</a></p>
+</div>
+<script>
+function myfunction(){
+var x = document.getElementById("pass");
+var y = document.getElementById("hide1");
+var z = document.getElementById("hide2");
+if(x.type === 'password'){
+x.type = "text";
+y.style.display = "block";
+z.style.display = "none";
+}
+else{
+x.type = "password";
+y.style.display = "none";
+z.style.display = "block";
+}
+} 
+</script>
+</form>
+</div>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html
